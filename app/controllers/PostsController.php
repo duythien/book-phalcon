@@ -7,23 +7,16 @@ class PostsController extends \Phalcon\Mvc\Controller
     {
 
     }
-/*    public function showAction($categoryId=1, $userId=2)
+    public function showAction($categoryId=1, $userId=2)
     {
         //$year = $this->dispatcher->getParam('year');
         //$postTitle = $this->dispatcher->getParam('postTitle');
          echo "Danh sach bai viet theo category {$categoryId} 
          		boi tac gia {$userId}";
 
-    }*/
-
-    public function showAction()
-    {
-        $categoryId = $this->dispatcher->getParam('categoryId');
-        $userId = $this->dispatcher->getParam('userId');
-         echo "Danh sach bai viet theo category {$categoryId} 
-         		boi tac gia {$userId}";
-
     }
+
+    
     public function saveAction()
     {
         // Check if request has made with POST

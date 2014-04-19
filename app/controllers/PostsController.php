@@ -7,12 +7,12 @@ class PostsController extends \Phalcon\Mvc\Controller
     {
 
     }
-    public function showAction($categoryId=1, $userId=2)
+    public function showAction()
     {
-        //$year = $this->dispatcher->getParam('year');
-        //$postTitle = $this->dispatcher->getParam('postTitle');
+        $categoryId = $this->dispatcher->getParam('categoryId');
+        $userId = $this->dispatcher->getParam('userId');
          echo "Danh sach bai viet theo category {$categoryId} 
-         		boi tac gia {$userId}";
+                boi tac gia {$userId}";
 
     }
 

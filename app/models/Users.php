@@ -1,4 +1,4 @@
-<?php //namespace PhalconBook\Models;
+<?php namespace PhalconBook\Models;
 
 
 use Phalcon\Mvc\Model\Validator\Email as Email;

@@ -54,11 +54,11 @@ $di->set('view', function () use ($config) {
 /**
  * Dispatcher use a default namespace
  */
-/*$di->set('dispatcher', function() {
+$di->set('dispatcher', function() {
     $dispatcher = new Dispatcher();
     $dispatcher->setDefaultNamespace('PhalconBook\Controllers');
     return $dispatcher;
-});*/
+});
 
 /**
  * Database connection is created based in the parameters defined in the configuration file

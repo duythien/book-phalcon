@@ -1,4 +1,4 @@
-<?php //namespace PhalconBook\Controllers;
+<?php namespace PhalconBook\Controllers;
 
 use Phalcon\Mvc\Controller;
 

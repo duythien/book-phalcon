@@ -83,7 +83,11 @@ $di->set('modelsMetadata', function () {
  * Start the session the first time some component request the session service
  */
 $di->set('session', function () {
-    $session = new SessionAdapter();
+    $session = new SessionAdapter(
+        array(
+            'uniqueId' => 'my-app-1'
+        )
+    );
     $session->start();
 
     return $session;

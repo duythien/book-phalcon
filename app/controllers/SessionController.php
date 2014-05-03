@@ -17,6 +17,8 @@ class SessionController extends \Phalcon\Mvc\Controller
     	//echo "<h3>Login Form </h3>";
     	$user =Users::findFirst();
     	print $user->email;
+  
     }
+
 }
 

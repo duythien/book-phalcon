@@ -17,17 +17,13 @@
 					{{ text_area("content") }}
 				</td>
 			</tr>
-			
-
-			
 			<tr class="form-actions">
 				<td align="right"></td>
 				<td> {{ submit_button('Save','class':'btn btn-primary btn-large') }}</td>
 			</tr>
 		</table>
-
-	
-		<hr>
+		{#{ abc}#}
+		<?php  var_dump($this->session->get('user'));?>
 
 	</form>
 

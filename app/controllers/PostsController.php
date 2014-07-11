@@ -50,7 +50,7 @@ class PostsController extends \Phalcon\Mvc\Controller
 
         $this->session->set("abc","abcc");
     }
-    public function beforeExecuteRoute($dispatcher)
+    /*public function beforeExecuteRoute($dispatcher)
     {
         // This is executed before every found action
         if ($dispatcher->getActionName() == 'save') {
@@ -64,7 +64,7 @@ class PostsController extends \Phalcon\Mvc\Controller
 
             return false;
         }
-    }
+    }*/
     public function jsonAction()
     {
        //$this->view->disable();

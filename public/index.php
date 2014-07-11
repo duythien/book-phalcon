@@ -6,7 +6,6 @@ error_reporting(E_ALL);
 $debug = new \Phalcon\Debug();
 $debug->listen();
 
-try {
     include __DIR__ . "/../vendor/PDW/DebugWidget.php";
 
     /**
@@ -30,7 +29,3 @@ try {
     $application = new \Phalcon\Mvc\Application($di);
 
     echo $application->handle()->getContent();
-
-} catch (\Exception $e) {
-    echo $e->getMessage();
-}

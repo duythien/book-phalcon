@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 class PostsController extends \Phalcon\Mvc\Controller
 {
@@ -11,9 +11,14 @@ class PostsController extends \Phalcon\Mvc\Controller
     {
         //$year = $this->dispatcher->getParam('year');
         //$postTitle = $this->dispatcher->getParam('postTitle');
-         echo "Danh sach bai viet theo category {$categoryId} 
-         		boi tac gia {$userId}";
-
+         /*echo "Danh sach bai viet theo category {$categoryId} 
+         		boi tac gia {$userId}";*/
+        $this->view->posts = array('categoryId'=>111, 'userId'=>2222);
+        //Passing more than one variable at the same time
+       	$this->view->setVars(array(
+            'title' => 'How to create blog use Phalcon',
+            'body'  => 'In tutorial We will explain step by step ..'
+        ));
     }
 
     public function saveAction()
